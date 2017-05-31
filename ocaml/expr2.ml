@@ -76,7 +76,7 @@ and
       normalized_t |> normalize
   end;;
 
-(* ノーマルフォームかどうか調べる関数を作る *)
+(* todo: ノーマルフォームかどうか調べる関数を作る *)
 
 let rec alpha_convertible t = function
     Identifier(s2) -> 
