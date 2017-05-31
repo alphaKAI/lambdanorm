@@ -77,7 +77,7 @@ void main() {
   writeln("Y := ", Y.stringof);
 
   auto Z = abst(f, app(abst(x, app(f, abst(y, app(app(x, x), y)))), abst(x, app(f, abst(y, app(app(x, x), y))))));
- writeln("Z := ", Z.stringof);
+  writeln("Z := ", Z.stringof);
 
   auto fact_impl = abst(f, abst(n, app(app(app(_if, app(isZero, n)), one), app(app(mul, n), app(f, app(pred, n))))));
   auto fact = app(Y, fact_impl);
